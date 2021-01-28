@@ -1,0 +1,10 @@
+---
+  - name: Install and Configure Tomcat with Student App Deployment
+    #hosts: localhost
+    #connection: local
+    hosts: tomcat1
+    gather_facts: false
+    become: yes
+    roles:
+      - Appstack-Role
+      - Cloudwatch-Role

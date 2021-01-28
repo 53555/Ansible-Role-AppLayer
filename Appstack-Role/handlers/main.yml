@@ -1,0 +1,6 @@
+---
+# handlers file for Appstack-Role
+- name: Restart service tomcat
+  service:
+    name: tomcat
+    state: restarted

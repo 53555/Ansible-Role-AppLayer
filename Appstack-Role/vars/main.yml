@@ -1,0 +1,17 @@
+---
+# vars file for Appstack-Role
+req_java: java-1.8.0-openjdk
+set_java: jre-1.8.0-openjdk
+req_tomcat_ver: 9.0.41
+tomcat_url: https://mirrors.estointernet.in/apache/tomcat/tomcat-{{req_tomcat_ver.split('.')[0]}}/v{{req_tomcat_ver}}/bin/apache-tomcat-{{req_tomcat_ver}}.tar.gz
+MySql8_jdbc_connector_url: https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar
+keycloak_adapter_url: https://downloads.jboss.org/keycloak/11.0.3/adapters/keycloak-oidc/keycloak-tomcat-adapter-dist-11.0.3.tar.gz
+tomcat_port: 8080
+tomcat_https_port: 8443
+student_web_path: /opt/tomcat/webapps/student/WEB-INF
+student_met_path: /opt/tomcat/webapps/student/META-INF
+systemd_path: /etc/systemd/system
+db_name: appstack.cddtavta0o27.us-east-2.rds.amazonaws.com
+db_port: 3306
+db_user: admin
+db_pass: Reuters123$
